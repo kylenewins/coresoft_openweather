@@ -6,6 +6,6 @@ const forecastSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Forecast = mongoose.model("Weather", forecastSchema);
+const extendedForecast = mongoose.model("Extended", forecastSchema);
 
-module.exports = Forecast;
+module.exports = extendedForecast;

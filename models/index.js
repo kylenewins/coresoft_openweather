@@ -1,5 +1,5 @@
 module.exports = {
-    fiveDay: require('./5day'),
-    extended: require('./16day'),
+    fiveDay: require('./fiveDay'),
+    extended: require('./extended'),
     maps: require("./maps")
 }

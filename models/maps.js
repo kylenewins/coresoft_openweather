@@ -6,6 +6,6 @@ const mapSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const WeatherMap = mongoose.model("Weather", mapSchema);
+const WeatherMap = mongoose.model("Maps", mapSchema);
 
 module.exports = WeatherMap;
