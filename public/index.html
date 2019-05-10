@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-light bg-light">
@@ -15,10 +16,11 @@
 
         <div class = container>
             <div class = "row">
-                    <div class="card col-md-4" id="fiveDay" style="height: 30rem;">
+                    <div class="card col-md-4" id="fiveDay">
                             <div class="card-body">
-                              <h5 class="card-title">Five Day Forecast</h5>
-                              <div id="fiveDayData"></div>
+                              <h5 class="card-title h4 text-center">Five Day Forecast</h5>
+                              <hr>
+                              <div id="fiveDayData" class="text-center"></div>
                               <button class="btn btn-primary" id="saveFive">Save Data</button>
                             </div>
                     </div>

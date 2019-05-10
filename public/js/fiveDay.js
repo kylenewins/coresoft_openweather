@@ -15,6 +15,11 @@ $(document).ready(function(){
             var day = $("<div></div>")
             day.attr("id", "dayDiv")
 
+            var convertedDate = moment().add(i, "days").format("MM/DD/YYYY")
+
+            var date = $("<h5></h5>")
+            date.text(convertedDate)
+
             var temp = $("<h6></h6>")
             temp.text("Low: " + result.list[i].main.temp_min + " High: " + result.list[i].main.temp_max)
 
@@ -36,9 +41,11 @@ $(document).ready(function(){
 
             data.push(singleData)
 
+            date.appendTo(day)
             desc.appendTo(day)
             icon.appendTo(day)
             temp.appendTo(day)
+            $("<hr>").appendTo(day)
 
             day.appendTo($("#fiveDayData"))
         }
