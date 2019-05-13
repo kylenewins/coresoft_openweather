@@ -5,6 +5,8 @@
         <title>CoreSoft OpenWeather Demo</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -16,20 +18,23 @@
 
         <div class = container>
             <div class = "row">
-                    <div class="card col-md-4" id="fiveDay">
+                    <div class="card col-md-4 text-center" id="fiveDay">
                             <div class="card-body">
                               <h5 class="card-title h4 text-center">Five Day Forecast</h5>
                               <hr>
                               <div id="fiveDayData" class="text-center"></div>
                               <button class="btn btn-primary" id="saveFive">Save Data</button>
+                              <button class= "btn btn-primary fas fa-sync-alt" id="r5"></button> 
                             </div>
                     </div>
                     
-                    <div class="card col-md-4" id="extended">
+                    <div class="card col-md-4 text-center" id="extended">
                             <div class="card-body">
-                              <h5 class="card-title">Extended Forecast</h5>
-                              <div id="extendedData"></div>
+                              <h5 class="card-title h4 text-center">Extended Forecast</h5>
+                              <hr>
+                              <div class = "scroll" id="extendedData"></div>
                               <button class="btn btn-primary" id = "saveExtended">Save Data</button>
+                              <button class= "btn btn-primary fas fa-sync-alt" id="re"></button> 
                             </div>
                     </div>
                     

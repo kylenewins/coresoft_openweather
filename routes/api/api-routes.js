@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const weatherController = require("../../controllers/weatherController");
 
-// Matches with "/api/books"
+// Matches with "/api/weather"
 router.route("/")
   .get(weatherController.findAll)
 
-// Matches with "/api/books/:id"
+// Matches with "/api/weather/"
 router
   .route("/fiveday")
   .post(weatherController.saveFiveDay)
